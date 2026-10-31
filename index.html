@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#210f20">
+<title>Happy Birthday Sayanggg — From Humayaa</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<section class="screen active" id="loading">
+  <div class="glow one"></div><div class="glow two"></div>
+  <div class="panel">
+    <div class="flower">🌸</div>
+    <p class="loading-title serif">Loading your surprise...</p>
+    <div class="progress"></div>
+    <p class="subtle" style="margin:20px 0 0">A little something made with love</p>
+  </div>
+</section>
+
+<section class="screen" id="pin">
+  <div class="glow one"></div><div class="glow two"></div>
+  <div class="panel">
+    <div class="rose">🌹</div>
+    <p class="eyebrow">A little surprise for you</p>
+    <h1 class="pin-title serif">For You, Sayanggg</h1>
+    <p class="subtle">Enter the secret code</p>
+    <div class="pin-dots" id="pinDots"><i class="pin-dot"></i><i class="pin-dot"></i><i class="pin-dot"></i><i class="pin-dot"></i><i class="pin-dot"></i><i class="pin-dot"></i></div>
+    <div class="keypad">
+      <button class="key" data-key="1">1</button><button class="key" data-key="2">2</button><button class="key" data-key="3">3</button>
+      <button class="key" data-key="4">4</button><button class="key" data-key="5">5</button><button class="key" data-key="6">6</button>
+      <button class="key" data-key="7">7</button><button class="key" data-key="8">8</button><button class="key" data-key="9">9</button>
+      <button class="key utility" data-key="clear">×</button><button class="key" data-key="0">0</button><button class="key utility" data-key="back">⌫</button>
+    </div>
+    <p class="pin-error" id="pinError" aria-live="polite"></p>
+    <p class="made">Made with love 💕</p>
+  </div>
+</section>
+
+<section class="screen" id="giftScreen">
+  <div class="glow one"></div><div class="glow two"></div>
+  <span class="sparkle" style="left:12%;top:18%">✿</span><span class="sparkle" style="right:15%;top:24%;animation-delay:1s">♡</span><span class="sparkle" style="left:20%;bottom:18%;animation-delay:2s">✧</span><span class="sparkle" style="right:18%;bottom:15%;animation-delay:.5s">🌼</span>
+  <div class="panel gift-panel">
+    <p class="eyebrow">Something special is waiting</p>
+    <p class="gift-hint">Tap the gift box to open it 🎁</p>
+    <div class="gift-stage" id="giftTap" role="button" tabindex="0" aria-label="Open the birthday gift">
+      <div class="gift" id="gift">
+        <div class="gift-lid"></div><div class="bow"></div><div class="gift-base"></div><div class="ribbon-v"></div><div class="ribbon-h"></div>
+      </div>
+    </div>
+    <p class="subtle">A little happiness, wrapped just for you.</p>
+  </div>
+</section>
+
+<section class="screen" id="birthday">
+  <div class="glow one"></div><div class="glow two"></div>
+  <div class="panel birthday-panel">
+    <div class="cake">🎂 &nbsp; Your Special Day &nbsp; 🎂</div>
+    <p class="eyebrow">A day as lovely as you are</p>
+    <h1 class="birthday-title serif">HAPPY <span>BIRTHDAY</span></h1>
+    <h2 class="name-title serif">SAYANGGG</h2>
+    <p class="dayline">Hari paling spesial · Today is all about you</p>
+    <div class="divider"></div>
+    <p class="quote">“Wishing you happiness, good health, and all your dreams come true.” <span style="font-style:normal">💗</span></p>
+    <div class="actions">
+      <button class="btn" id="letterBtn">Buka surat kecil 💌</button>
+      <button class="btn secondary" id="hugBtn">Kirim peluk virtual ♡</button>
+    </div>
+    <div class="letter" id="letter">
+      <strong>Dear My Abayy,</strong><br><br>
+      Selamat Ulang Tahun Uda sayangg! ❤️ Semoga di umur yang baru ini, Uda selalu diberi kesehatan, panjang umur, hati yang tenang, dan banyak alasan untuk bahagia. Semoga semua yang Uda usahakan pelan-pelan menemukan jalannya, semua doa baik Uda satu per satu jadi nyata, dan setiap langkah Uda selalu dimudahkan.<br><br>
+      Makasih yaa sudah hadir dan jadi bagian yang spesial di hidup Humayaa. Semoga Uda nggak pernah lupa kalau Uda itu berharga, disayang, dan pantas mendapatkan banyak hal baik. Kalau nanti ada hari yang capek atau terasa berat, semoga Uda selalu ingat kalau Uda nggak harus menghadapi semuanya sendirian. Humayaa akan selalu ikut mendoakan yang terbaik buat Uda, dari dekat maupun jauh.<br><br>
+      Tetap jadi Uda yang Humayaa sayang, yaa. Jangan terlalu keras sama diri sendiri, jangan lupa istirahat, dan jangan berhenti mengejar hal-hal yang Uda impikan. Semoga tahun ini membawa lebih banyak cerita indah, tawa, rezeki, dan momen yang bisa kita kenang bareng.<br><br>
+      I love you, Uda sayangg. Happy birthday sekali lagiii! 💗<br><br>
+      <strong>With all my love,</strong><br>
+      From Humayaa 💕
+    </div>
+
+    <section class="photo-section" aria-label="Our photo memories">
+      <h3 class="photo-heading">Our Little Memories 📸</h3>
+      <p class="photo-help">This is our Journeyy!! 💗 Ini dia kado terbaik dihidup kamu tahun ini -ADIKKK-</p>
+      <div class="photo-grid" id="photoGrid">
+        <label class="photo-slot has-photo" data-photo-index="0">
+          <input type="file" accept="image/*">
+          <span class="placeholder"><b>＋</b>Tambah foto 1</span>
+          <img src="assets/memory-01.jpg" alt="Kenangan sementara 1" loading="lazy">
+          <span class="change-tag">Ganti foto</span>
+        </label>
+        <label class="photo-slot has-photo" data-photo-index="1">
+          <input type="file" accept="image/*">
+          <span class="placeholder"><b>＋</b>Tambah foto 2</span>
+          <img src="assets/memory-02.jpg" alt="Kenangan sementara 2" loading="lazy">
+          <span class="change-tag">Ganti foto</span>
+        </label>
+        <label class="photo-slot has-photo" data-photo-index="2">
+          <input type="file" accept="image/*">
+          <span class="placeholder"><b>＋</b>Tambah foto 3</span>
+          <img src="assets/memory-03.jpg" alt="Kenangan sementara 3" loading="lazy">
+          <span class="change-tag">Ganti foto</span>
+        </label>
+        <label class="photo-slot has-photo" data-photo-index="3">
+          <input type="file" accept="image/*">
+          <span class="placeholder"><b>＋</b>Tambah foto 4</span>
+          <img src="assets/memory-04.jpg" alt="Kenangan sementara 4" loading="lazy">
+          <span class="change-tag">Ganti foto</span>
+        </label>
+        <label class="photo-slot has-photo" data-photo-index="4">
+          <input type="file" accept="image/*">
+          <span class="placeholder"><b>＋</b>Tambah foto 5</span>
+          <img src="assets/memory-05.jpg" alt="Kenangan sementara 5" loading="lazy">
+          <span class="change-tag">Ganti foto</span>
+        </label>
+        <label class="photo-slot has-photo" data-photo-index="5">
+          <input type="file" accept="image/*">
+          <span class="placeholder"><b>＋</b>Tambah foto 6</span>
+          <img src="assets/memory-06.jpg" alt="Kenangan sementara 6" loading="lazy">
+          <span class="change-tag">Ganti foto</span>
+        </label>
+        <label class="photo-slot has-photo" data-photo-index="6">
+          <input type="file" accept="image/*">
+          <span class="placeholder"><b>＋</b>Tambah foto 7</span>
+          <img src="assets/memory-07.jpg" alt="Kenangan sementara 7" loading="lazy">
+          <span class="change-tag">Ganti foto</span>
+        </label>
+        <label class="photo-slot has-photo" data-photo-index="7">
+          <input type="file" accept="image/*">
+          <span class="placeholder"><b>＋</b>Tambah foto 8</span>
+          <img src="assets/memory-08.jpg" alt="Kenangan sementara 8" loading="lazy">
+          <span class="change-tag">Ganti foto</span>
+        </label>
+        <label class="photo-slot has-photo" data-photo-index="8">
+          <input type="file" accept="image/*">
+          <span class="placeholder"><b>＋</b>Tambah foto 9</span>
+          <img src="assets/memory-09.jpg" alt="Kenangan sementara 9" loading="lazy">
+          <span class="change-tag">Ganti foto</span>
+        </label>
+        <label class="photo-slot has-photo" data-photo-index="9">
+          <input type="file" accept="image/*">
+          <span class="placeholder"><b>＋</b>Tambah foto 10</span>
+          <img src="assets/memory-10.jpg" alt="Kenangan sementara 10" loading="lazy">
+          <span class="change-tag">Ganti foto</span>
+        </label>
+      </div>
+    </section>
+
+    <p class="footer-note">TODAY IS YOURS · MAKE A WISH ✨</p>
+  </div>
+</section>
+
+
+<audio id="birthdayAudio" autoplay loop playsinline preload="auto" src="assets/birthday-song.mp3"></audio>
+<button class="music" id="musicBtn" aria-label="Toggle music" title="Musik">♫</button>
+<div class="toast" id="toast">Sending you the biggest hug! 💗</div>
+
+<div class="hug-overlay" id="hugOverlay" role="dialog" aria-modal="true" aria-labelledby="hugTitle">
+  <div class="hug-card">
+    <button class="hug-close" id="hugClose" aria-label="Tutup">×</button>
+    <div class="hug-heart">💗</div>
+    <h2 id="hugTitle">A warm hug for youuu!</h2>
+    <p>Kalau Humayaa ada di samping Uda sekarang,<br>ini peluk paling erat yang bakal Humayaa kasih 🥺</p>
+    <div class="hug-scene" id="hugScene">
+      <div class="hug-glow"></div>
+      <div class="kitty left">
+        <div class="kitty-tail"></div><div class="kitty-body"></div>
+        <div class="kitty-head"><i class="kitty-inner-ear one"></i><i class="kitty-inner-ear two"></i><i class="kitty-eye one"></i><i class="kitty-eye two"></i><i class="kitty-nose"></i><i class="kitty-mouth"></i><i class="kitty-cheek one"></i><i class="kitty-cheek two"></i></div>
+        <div class="kitty-paw side"></div><div class="kitty-paw front"></div>
+      </div>
+      <div class="kitty right">
+        <div class="kitty-tail"></div><div class="kitty-body"></div>
+        <div class="kitty-head"><i class="kitty-inner-ear one"></i><i class="kitty-inner-ear two"></i><i class="kitty-eye one"></i><i class="kitty-eye two"></i><i class="kitty-nose"></i><i class="kitty-mouth"></i><i class="kitty-cheek one"></i><i class="kitty-cheek two"></i></div>
+        <div class="kitty-paw side"></div><div class="kitty-paw front"></div>
+      </div>
+      <div class="hug-arms"></div>
+    </div>
+    <p id="hugCaption">Peluk jauh dulu yaaa, Uda sayanggg! 🐱💕</p>
+    <button class="hug-reply" id="hugReply">Peluk balik Humayaa 🤗</button>
+  </div>
+</div>
+
+
+  <script src="js/script.js"></script>
+</body>
+</html>
